@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoluCrea DIGITAL | Agencia Full-Service de Marketing</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuente Inter para legibilidad y profesionalismo -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Fondo blanco suave */
+        }
+        /* Configuración de colores corporativos */
+        .text-primary-red { color: #C40233;}
+        .bg-dark-black { background-color: #1A202C; } /* Negro/Gris Oscuro */
+        .shadow-red { box-shadow: 0 10px 15px -3px rgba(229, 62, 62, 0.4), 0 4px 6px -2px rgba(229, 62, 62, 0.2); }
+
+        /* Nuevo estilo moderno: Gradient CTA (Rojo a Naranja suave) */
+        .cta-gradient {
+            background-image: linear-gradient(to right, #E53E3E, #FF5733); 
+        }
+        .cta-gradient:hover {
+            background-image: linear-gradient(to right, #C53030, #E04E2D);
+        }
+
+        /* Nuevo estilo moderno: Icon Service Container (Círculo rojo vibrante) */
+        .icon-service {
+            display: inline-flex;
+            width: 4rem;
+            height: 4rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1rem; /* Cuadrado redondeado moderno */
+            background-color: #fff0f0; /* Fondo rojo muy claro */
+            color: #E53E3E; /* Icono rojo */
+            margin-bottom: 1.5rem; 
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <!-- BARRA DE NAVEGACIÓN FIJA (Sticky) -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-xl supports-[backdrop-filter]:bg-white/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logotipo -->
+                <a href="#" class="text-3xl font-black text-dark-black tracking-wider">
+                    Solu<span class="text-primary-red">Crea</span>
+                </a>
+                <!-- Menú de Navegación (Desktop) -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#servicios" class="text-gray-600 hover:text-primary-red transition duration-300 font-semibold">Servicios</a>
+                    <a href="#casos" class="text-gray-600 hover:text-primary-red transition duration-300 font-semibold">Casos de Éxito</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-primary-red transition duration-300 font-semibold">Contacto</a>
+                    <!-- CTA con Gradiente en la barra de navegación -->
+                    <a href="#contacto" class="py-2.5 px-6 cta-gradient text-white font-bold rounded-full transition duration-300 shadow-md hover:shadow-lg">
+                        Cotiza tu Proyecto
+                    </a>
+                </nav>
+
+                <!-- Botón de Menú Móvil (Hamburguesa) -->
+                <div class="md:hidden">
+                    <button class="text-primary-red focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN HERO (Alto Contraste y Gradiente Oscuro) -->
+        <section class="relative bg-dark-black text-white py-32 md:py-48 overflow-hidden rounded-b-[50px] shadow-2xl">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center relative z-10">
+                <div class="text-center md:text-left">
+                    <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                        Impulsamos tu Marca, <span class="text-primary-red inline-block">Aceleramos tus Ventas</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-10 text-gray-300 font-light leading-relaxed">
+                        Somos tu agencia full-service: desde la estrategia digital y el desarrollo web hasta la producción audiovisual de alto impacto.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                        <a href="#contacto" class="inline-block py-4 px-8 cta-gradient text-white text-lg font-bold rounded-full transition duration-300 transform hover:scale-105 shadow-red text-center">
+                            Solicitar Auditoría GRATIS
+                        </a>
+                        <a href="#servicios" class="inline-block py-4 px-8 border-2 border-white text-white text-lg font-bold rounded-full transition duration-300 hover:bg-white hover:text-dark-black text-center">
+                            Explorar Servicios
+                        </a>
+                    </div>
+                </div>
+                <!-- Espacio para imagen Hero o Gráfico Abstracto -->
+                <div class="hidden md:block relative h-96">
+                     <div class="absolute top-10 right-10 w-72 h-72 bg-primary-red opacity-20 rounded-full blur-3xl animate-pulse"></div>
+                     <div class="absolute bottom-10 left-10 w-72 h-72 bg-blue-500 opacity-10 rounded-full blur-3xl"></div>
+                     <!-- Placeholder visual para representar servicios integrales -->
+                     <div class="border-2 border-gray-700 rounded-2xl h-full w-full flex items-center justify-center text-gray-600 font-bold bg-dark-black/50 backdrop-blur-md">
+                        [Imagen: Collage Dinámico de Servicios]
+                     </div>
+                </div>
+            </div>
+             <!-- Fondo con patrón sutil -->
+            <div class="absolute inset-0 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        </section>
+
+        <!-- SECCIÓN DE SERVICIOS EXPANDIDA (4 Pilares) -->
+        <section id="servicios" class="py-24 md:py-36 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <h2 class="text-base font-bold text-primary-red uppercase tracking-widest mb-3">Nuestros Servicios</h2>
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-dark-black">Todo lo que tu Empresa Necesita para <span class="text-primary-red">Crecer en Digital</span></h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    
+                    <!-- PILAR 1: Marketing Digital -->
+                    <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2">
+                        <div class="icon-service group-hover:bg-primary-red group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-megaphone"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+                        </div>
+                        <h4 class="text-2xl font-extrabold mb-4 text-dark-black">Marketing Digital 360°</h4>
+                        <p class="text-gray-600 mb-6">Estrategias integrales para posicionar tu marca donde están tus clientes.</p>
+                        <ul class="space-y-3 text-gray-700 font-medium">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Reconocimiento de Marca (Branding)</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Publicidad Digital (Meta & Google Ads)</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Posicionamiento SEO</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Email Marketing & Embudos</li>
+                        </ul>
+                    </div>
+
+                    <!-- PILAR 2: Producción Audiovisual -->
+                    <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2">
+                        <div class="icon-service group-hover:bg-primary-red group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
+                        </div>
+                        <h4 class="text-2xl font-extrabold mb-4 text-dark-black">Producción y Edición</h4>
+                        <p class="text-gray-600 mb-6">Contenido visual de alto impacto que captura la esencia de tu negocio.</p>
+                        <ul class="space-y-3 text-gray-700 font-medium">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Preproducción y Estrategia Visual</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Grabación Profesional</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Tomas Aéreas con Dron 4K</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Postproducción y Edición Dinámica</li>
+                        </ul>
+                    </div>
+
+                    <!-- PILAR 3: Desarrollo Web -->
+                    <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2">
+                        <div class="icon-service group-hover:bg-primary-red group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-2"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+                        </div>
+                        <h4 class="text-2xl font-extrabold mb-4 text-dark-black">Desarrollo Web</h4>
+                        <p class="text-gray-600 mb-6">Sitios web rápidos, seguros y diseñados para convertir visitantes en clientes.</p>
+                        <ul class="space-y-3 text-gray-700 font-medium">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Diseño Web Estratégico UI/UX</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Implementación y Codificación</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Tiendas en Línea (E-commerce)</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Optimización y Mantenimiento</li>
+                        </ul>
+                    </div>
+
+                    <!-- PILAR 4: Community Manager -->
+                    <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2">
+                        <div class="icon-service group-hover:bg-primary-red group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h4 class="text-2xl font-extrabold mb-4 text-dark-black">Community Manager</h4>
+                        <p class="text-gray-600 mb-6">Construimos y gestionamos una comunidad activa alrededor de tu marca.</p>
+                        <ul class="space-y-3 text-gray-700 font-medium">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Gestión de Interacción y Comunidad</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Ejecución de Calendario de Contenidos</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Atención al Cliente Digital</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-primary-red rounded-full mr-3"></span>Reportes de Rendimiento y Feedback</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- CTA Secundario después de Servicios -->
+                <div class="text-center mt-20 bg-dark-black p-12 rounded-[3rem] relative overflow-hidden">
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-bold text-white mb-6">¿No sabes qué servicio necesitas?</h3>
+                        <p class="text-gray-400 mb-8 text-lg max-w-2xl mx-auto">Agenda una llamada de 15 minutos con nuestros expertos. Analizaremos tu caso y te recomendaremos el plan ideal.</p>
+                        <a href="#contacto" class="inline-block py-4 px-10 cta-gradient text-white font-bold rounded-full transition duration-300 hover:scale-[1.05] shadow-lg">
+                            Hablar con un Experto
+                        </a>
+                    </div>
+                     <div class="absolute -top-24 -right-24 w-64 h-64 bg-primary-red opacity-10 rounded-full blur-3xl"></div>
+                     <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-blue-500 opacity-10 rounded-full blur-3xl"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE TESTIMONIOS (Simplificada para dar espacio a servicios) -->
+        <section id="casos" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold text-dark-black mb-12">Ellos confían en SoluCrea</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                     <!-- Testimonio Rápido 1 -->
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                        <div class="text-primary-red text-4xl leading-none mb-4">“</div>
+                        <p class="text-gray-700 italic mb-4">Duplicaron nuestros leads en solo 3 meses con Meta Ads.</p>
+                         <div class="font-bold text-dark-black">- E-commerce Moda</div>
+                    </div>
+                     <!-- Testimonio Rápido 2 -->
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                         <div class="text-primary-red text-4xl leading-none mb-4">“</div>
+                        <p class="text-gray-700 italic mb-4">La nueva web y los videos con dron elevaron nuestra imagen profesional.</p>
+                        <div class="font-bold text-dark-black">- Constructora ABC</div>
+                    </div>
+                     <!-- Testimonio Rápido 3 -->
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                         <div class="text-primary-red text-4xl leading-none mb-4">“</div>
+                        <p class="text-gray-700 italic mb-4">Excelente gestión de comunidad, nuestros clientes están felices.</p>
+                        <div class="font-bold text-dark-black">- Restaurante Local</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN FORMULARIO DE CONTACTO -->
+        <section id="contacto" class="py-24 md:py-36 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white rounded-[3rem] shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-5">
+                    <!-- Lado Izquierdo: Info -->
+                    <div class="md:col-span-2 bg-dark-black p-12 text-white flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-3xl font-extrabold mb-6 leading-tight">Hablemos de tu próximo gran proyecto</h3>
+                            <p class="text-gray-400 mb-10">Completa el formulario y recibe una propuesta inicial en menos de 24 horas.</p>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-primary-red/20 rounded-full flex items-center justify-center mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-red" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                                </div>
+                                <span class="font-medium">(55) 1234 5678</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-primary-red/20 rounded-full flex items-center justify-center mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-red" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                                </div>
+                                <span class="font-medium">info@solucrea.digital</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lado Derecho: Formulario -->
+                    <div class="md:col-span-3 p-10 lg:p-16">
+                        <h3 class="text-2xl font-bold mb-8 text-dark-black">Solicita Información</h3>
+                        <form class="space-y-6" onsubmit="alert('¡Mensaje Enviado! (Demo)'); return false;">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">Nombre</label>
+                                    <input type="text" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 transition outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">Empresa</label>
+                                    <input type="text" class="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 transition outline-none">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Correo Electrónico</label>
+                                <input type="email" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 transition outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Servicio de Interés</label>
+                                <select class="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 transition outline-none text-gray-600">
+                                    <option>Marketing Digital 360°</option>
+                                    <option>Producción Audiovisual</option>
+                                    <option>Desarrollo Web</option>
+                                    <option>Community Manager</option>
+                                    <option>Otro / No estoy seguro</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Mensaje</label>
+                                <textarea rows="3" class="w-full p-3 bg-gray-50 border border-gray-200 rounded-xl focus:border-primary-red focus:ring-2 focus:ring-primary-red/20 transition outline-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 cta-gradient text-white text-lg font-bold rounded-xl transition duration-300 hover:scale-[1.02] shadow-red">
+                                Enviar Solicitud
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA (Footer) -->
+    <footer class="bg-dark-black text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                     <a href="#" class="text-2xl font-black text-white tracking-wider block mb-6">
+                        Solu<span class="text-primary-red">Crea</span>
+                    </a>
+                    <p class="text-gray-400 leading-relaxed mb-6">Transformamos negocios a través de estrategias digitales integrales, diseño web de vanguardia y contenido audiovisual que conecta.</p>
+                    <!-- Redes Sociales (Iconos placeholder) -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-red transition text-gray-400 hover:text-white">IG</a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-red transition text-gray-400 hover:text-white">FB</a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-red transition text-gray-400 hover:text-white">LI</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Servicios</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-primary-red transition">Marketing Digital</a></li>
+                        <li><a href="#" class="hover:text-primary-red transition">Producción de Video</a></li>
+                        <li><a href="#" class="hover:text-primary-red transition">Desarrollo Web</a></li>
+                        <li><a href="#" class="hover:text-primary-red transition">Community Management</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Agencia</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#casos" class="hover:text-primary-red transition">Casos de Éxito</a></li>
+                        <li><a href="#" class="hover:text-primary-red transition">Nosotros</a></li>
+                        <li><a href="#" class="hover:text-primary-red transition">Blog</a></li>
+                        <li><a href="#contacto" class="hover:text-primary-red transition">Trabaja con Nosotros</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Legal</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-primary-red transition">Aviso de Privacidad</a></li>
+                        <li><a href="#" class="hover:text-primary-red transition">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 SoluCrea DIGITAL. Todos los derechos reservados.</p>
+                <p class="mt-4 md:mt-0">Diseñado para el crecimiento.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
