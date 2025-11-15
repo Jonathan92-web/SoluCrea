@@ -4,41 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoluCrea DIGITAL | Agencia Full-Service de Marketing</title>
-    <!-- Carga de Tailwind CSS -->
+    
+    <!-- External Resources -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fuente Inter para legibilidad y profesionalismo -->
+    <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'dark-black': '#1A202C',
+            'primary-red': '#C40233',
+        }
+      }
+    }
+  }
+</script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7f7f7; /* Fondo blanco suave */
-        }
-        /* Configuración de colores corporativos */
-        .text-primary-red { color: #C40233;}
-        .bg-dark-black { background-color: #1A202C; } /* Negro/Gris Oscuro */
-        .shadow-red { box-shadow: 0 10px 15px -3px rgba(229, 62, 62, 0.4), 0 4px 6px -2px rgba(229, 62, 62, 0.2); }
-
-        /* Nuevo estilo moderno: Gradient CTA (Rojo a Naranja suave) */
-        .cta-gradient {
-            background-image: linear-gradient(to right, #E53E3E, #FF5733); 
-        }
-        .cta-gradient:hover {
-            background-image: linear-gradient(to right, #C53030, #E04E2D);
-        }
-
-        /* Nuevo estilo moderno: Icon Service Container (Círculo rojo vibrante) */
-        .icon-service {
-            display: inline-flex;
-            width: 4rem;
-            height: 4rem;
-            justify-content: center;
-            align-items: center;
-            border-radius: 1rem; /* Cuadrado redondeado moderno */
-            background-color: #fff0f0; /* Fondo rojo muy claro */
-            color: #E53E3E; /* Icono rojo */
-            margin-bottom: 1.5rem; 
-        }
-    </style>
+    
+    <!-- Internal Resources -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
 </head>
 <body class="text-gray-900">
 
@@ -51,21 +36,34 @@
                     Solu<span class="text-primary-red">Crea</span>
                 </a>
                 <!-- Menú de Navegación (Desktop) -->
-                <nav class="hidden md:flex space-x-8 items-center">
+                <nav class="hidden md:flex space-x-8 items-center ">
                     <a href="#servicios" class="text-gray-600 hover:text-primary-red transition duration-300 font-semibold">Servicios</a>
                     <a href="#casos" class="text-gray-600 hover:text-primary-red transition duration-300 font-semibold">Casos de Éxito</a>
                     <a href="#contacto" class="text-gray-600 hover:text-primary-red transition duration-300 font-semibold">Contacto</a>
                     <!-- CTA con Gradiente en la barra de navegación -->
-                    <a href="#contacto" class="py-2.5 px-6 cta-gradient text-white font-bold rounded-full transition duration-300 shadow-md hover:shadow-lg">
+                    <a href="#contacto" class=" py-2.5 px-6 cta-gradient text-white font-bold rounded-full transition duration-300 shadow-md hover:shadow-lg">
                         Cotiza tu Proyecto
                     </a>
                 </nav>
 
                 <!-- Botón de Menú Móvil (Hamburguesa) -->
                 <div class="md:hidden">
-                    <button class="text-primary-red focus:outline-none">
+                    <button id="mobile-menu-button" class="text-primary-red focus:outline-none">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                     </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menú Móvil (Oculto por defecto) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-4 pb-6 shadow-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#servicios" class="mobile-link text-lg font-semibold text-gray-700 hover:text-primary-red py-2 px-4 rounded-lg hover:bg-gray-50 transition">Servicios</a>
+                <a href="#casos" class="mobile-link text-lg font-semibold text-gray-700 hover:text-primary-red py-2 px-4 rounded-lg hover:bg-gray-50 transition">Casos de Éxito</a>
+                <a href="#contacto" class="mobile-link text-lg font-semibold text-gray-700 hover:text-primary-red py-2 px-4 rounded-lg hover:bg-gray-50 transition">Contacto</a>
+                <div class="pt-4 border-t border-gray-100">
+                    <a href="#contacto" class="mobile-link block w-full py-3 text-center cta-gradient text-white font-bold rounded-xl shadow-md">
+                        Cotiza tu Proyecto
+                    </a>
                 </div>
             </div>
         </div>
@@ -76,15 +74,15 @@
         <section class="relative bg-dark-black text-white py-32 md:py-48 overflow-hidden rounded-b-[50px] shadow-2xl">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center relative z-10">
                 <div class="text-center md:text-left">
-                    <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                    <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight animate-fade-in-up">
                         Impulsamos tu Marca, <span class="text-primary-red inline-block">Aceleramos tus Ventas</span>
                     </h1>
                     <p class="text-xl md:text-2xl mb-10 text-gray-300 font-light leading-relaxed">
                         Somos tu agencia full-service: desde la estrategia digital y el desarrollo web hasta la producción audiovisual de alto impacto.
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-                        <a href="#contacto" class="inline-block py-4 px-8 cta-gradient text-white text-lg font-bold rounded-full transition duration-300 transform hover:scale-105 shadow-red text-center">
-                            Solicitar Auditoría GRATIS
+                        <a href="#contacto" class="inline-block py-4 px-8 cta-gradient text-white text-lg font-bold rounded-full transition duration-300 transform hover:scale-105 shadow-red text-center pulse-glow">
+                            Solicitar Asesoría Gratis
                         </a>
                         <a href="#servicios" class="inline-block py-4 px-8 border-2 border-white text-white text-lg font-bold rounded-full transition duration-300 hover:bg-white hover:text-dark-black text-center">
                             Explorar Servicios
@@ -116,7 +114,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
                     
                     <!-- PILAR 1: Marketing Digital -->
-                    <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2">
+                    <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2 animate-on-scroll">
                         <div class="icon-service group-hover:bg-primary-red group-hover:text-white transition-colors duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-megaphone"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
                         </div>
@@ -131,7 +129,7 @@
                     </div>
 
                     <!-- PILAR 2: Producción Audiovisual -->
-                    <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2">
+                    <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2 animate-on-scroll">
                         <div class="icon-service group-hover:bg-primary-red group-hover:text-white transition-colors duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
                         </div>
@@ -146,7 +144,7 @@
                     </div>
 
                     <!-- PILAR 3: Desarrollo Web -->
-                    <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2">
+                    <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2 animate-on-scroll">
                         <div class="icon-service group-hover:bg-primary-red group-hover:text-white transition-colors duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-2"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
                         </div>
@@ -161,7 +159,7 @@
                     </div>
 
                     <!-- PILAR 4: Community Manager -->
-                    <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2">
+                    <div class="bg-white p-8 lg:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2 animate-on-scroll">
                         <div class="icon-service group-hover:bg-primary-red group-hover:text-white transition-colors duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                         </div>
@@ -249,7 +247,7 @@
                     <!-- Lado Derecho: Formulario -->
                     <div class="md:col-span-3 p-10 lg:p-16">
                         <h3 class="text-2xl font-bold mb-8 text-dark-black">Solicita Información</h3>
-                        <form class="space-y-6" onsubmit="alert('¡Mensaje Enviado! (Demo)'); return false;">
+                        <form data-contact-form class="space-y-6" onsubmit="alert('¡Mensaje Enviado! (Demo)'); return false;">
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block text-sm font-semibold text-gray-700 mb-2">Nombre</label>
@@ -338,5 +336,8 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>
