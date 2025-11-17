@@ -32,6 +32,13 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/*bg hero*/
+.bg-hero{
+    background-image: url('/img/hero-bg.webp');
+    background-size: cover;
+    background-position: center;
+}
+
 /* Utilities */
 .transition-all {
     transition: all 0.3s ease;
@@ -63,6 +70,20 @@ body {
 .testimonial-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón flotante de WhatsApp */
+a[href*="wa.me"] {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 
