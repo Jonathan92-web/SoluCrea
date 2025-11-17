@@ -34,7 +34,7 @@ body {
 
 /*bg hero*/
 .bg-hero{
-    background-image: url('/img/hero-bg.webp');
+    background-image: url('../img/hero-bg.webp');
     background-size: cover;
     background-position: center;
 }
